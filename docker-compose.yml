@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  java:
+    container_name: pedu-modeling
+    build: ./
+    volumes:
+      - "./model:/var/model"
+    working_dir: /var/model
+    tty: true
